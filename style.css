@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+.container {
+    width: 700px;
+    
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background: #eee;
+    
+    
+
+}
+.header {
+    /* background: greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.content {
+    background: rgb(0, 195, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#heading1 {
+    text-align: center;
+}
+#heading2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table {
+    /* border: 1px solid black; */
+    width: 690px;
+    margin: 0px;
+    padding: 2px;
+}
+td {
+    padding: 4px  4px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#table2 {
+    text-align: center;
+}
+#button {
+    background: none;
+    color: rgb(5, 5, 5);
+    border-radius: 4px;
+    width: 240px;
+    height: 80px;
+    font-size: 18px;
+    border: 1px solid #338033;
+    transition: .6s;
+    overflow: hidden;
+}
+#button:focus{
+    outline: none;
+}
+#button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+
+}
+#button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+#button:hover {
+    background: #338033;
+    cursor: pointer;
+    color: #eee;
+}
+#button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+#button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    
+    transition: .7s;
+}
+
+.grade {
+    display: flex;
+    
+}
+.grade1, .grade2, .grade3, .grade4 {
+    margin: 20px auto;
+}
+.grade2, .grade4 {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+ul li {
+    list-style: none;
+}
+.footer div {
+    padding: 50px 30px 30px 20px;
+}
